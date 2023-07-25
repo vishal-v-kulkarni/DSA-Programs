@@ -1,6 +1,4 @@
 #include<iostream>
-#include<stdio.h>
-#include<stdlib.h>
 using namespace std;
 
 class Rectangle{
@@ -10,6 +8,12 @@ class Rectangle{
     int breadth;
 
     public:
+    //Default constructor
+    Rectangle(){
+        length = breadth = 1;
+    }
+
+    //Parameterized contructor - Overloading
     Rectangle(int l, int b){
         length = l;
         breadth = b;
